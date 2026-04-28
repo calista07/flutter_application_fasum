@@ -71,7 +71,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           });
       Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(builder: (context) => Homescreen()),
+        MaterialPageRoute(builder: (context) => HomeScreen()),
         (route) => false, // Hapus semua route sebelumnya
       );
     } on FirebaseAuthException catch (error) {

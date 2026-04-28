@@ -1,26 +1,36 @@
 {
   "project_info": {
-    "project_number": "371483128957",
-    "project_id": "flutter-fasum-app",
-    "storage_bucket": "flutter-fasum-app.firebasestorage.app"
+    "project_number": "784801906347",
+    "project_id": "prjpab2-si61-2327240137",
+    "storage_bucket": "prjpab2-si61-2327240137.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:371483128957:android:35cc01474e2cd50289ed14",
+        "mobilesdk_app_id": "1:784801906347:android:fd55dab7deefb2919f01ee",
         "android_client_info": {
           "package_name": "com.example.flutter_application_fasum"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "784801906347-q0tefprba9mvlrh0c9v5e55aq1mvil3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyCvG0780Bv5cv9i_VeKg2cDdxEfTEkIw-M"
+          "current_key": "AIzaSyBvcXEsqIRahziwcT536tgULBE6_aQ5MAE"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784801906347-q0tefprba9mvlrh0c9v5e55aq1mvil3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
