@@ -36,18 +36,13 @@ class _DetailScreenState extends State<DetailScreen> {
       'https://www.google.com/maps/search/?api=1&query=${widget.latitude},${widget.longitude}',
     );
 
-    final success = await launchUrl(
-      uri,
-      mode: LaunchMode.externalApplication,
-    );
+    final success = await launchUrl(uri, mode: LaunchMode.externalApplication);
 
     if (!mounted) return;
 
     if (!success) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Tidak bisa membuka Google Maps'),
-        ),
+        const SnackBar(content: Text('Tidak bisa membuka Google Maps')),
       );
     }
   }
@@ -59,9 +54,7 @@ class _DetailScreenState extends State<DetailScreen> {
     ).format(widget.createdAt);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Detail Laporan'),
-      ),
+      appBar: AppBar(title: const Text('Detail Laporan')),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -81,10 +74,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 top: 12,
                 right: 12,
                 child: IconButton(
-                  icon: const Icon(
-                    Icons.fullscreen,
-                    color: Colors.white,
-                  ),
+                  icon: const Icon(Icons.fullscreen, color: Colors.white),
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -96,9 +86,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     );
                   },
                   tooltip: 'Lihat gambar penuh',
-                  style: IconButton.styleFrom(
-                    backgroundColor: Colors.black45,
-                  ),
+                  style: IconButton.styleFrom(backgroundColor: Colors.black45),
                 ),
               ),
             ],
@@ -139,9 +127,7 @@ class _DetailScreenState extends State<DetailScreen> {
                         const SizedBox(height: 8),
 
                         Padding(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 16.0,
-                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
                           child: Row(
                             children: [
                               const Icon(
